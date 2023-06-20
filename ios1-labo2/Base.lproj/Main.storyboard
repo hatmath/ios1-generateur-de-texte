@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,44 +13,53 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios1_labo2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLt-iI-jgc">
-                                <rect key="frame" x="97" y="778" width="220" height="44"/>
-                                <color key="backgroundColor" systemColor="labelColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VP-zh-j0s">
+                                <rect key="frame" x="84" y="20" width="728" height="121.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Generer une phrase">
-                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tornado" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mP6-uz-Ccv">
+                                <rect key="frame" x="328" y="161" width="240" height="128"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127.5" id="Qfu-MJ-VHM"/>
+                                    <constraint firstAttribute="width" constant="240" id="epk-Kp-GIi"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLt-iI-jgc">
+                                <rect key="frame" x="288" y="309" width="320" height="44"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Ob6-lA-G9I"/>
+                                    <constraint firstAttribute="height" constant="44" id="XxV-dp-kez"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="uD7-BV-26r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Générer une phrase">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="btnGen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z6d-zv-DPJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TEXTE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VP-zh-j0s">
-                                <rect key="frame" x="20" y="64" width="374" height="220"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="220" id="Tkt-6B-84G"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4VP-zh-j0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4rl-6J-1hu"/>
-                            <constraint firstItem="4VP-zh-j0s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="8nm-px-2iC"/>
-                            <constraint firstItem="4VP-zh-j0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MYo-AC-bjH"/>
-                            <constraint firstItem="4VP-zh-j0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oj6-hW-8Og"/>
-                            <constraint firstItem="4VP-zh-j0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RDv-N0-RIg"/>
-                            <constraint firstItem="4VP-zh-j0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YdD-JT-Axy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bLt-iI-jgc" secondAttribute="bottom" constant="40" id="cr3-9B-rad"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4VP-zh-j0s" secondAttribute="trailing" constant="20" id="heD-vS-cxB"/>
-                            <constraint firstItem="bLt-iI-jgc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mXA-Qg-b5l"/>
-                            <constraint firstItem="4VP-zh-j0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qcA-kl-6DI"/>
-                            <constraint firstItem="4VP-zh-j0s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wZb-go-4BK"/>
+                            <constraint firstItem="4VP-zh-j0s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="8nm-px-2iC" userLabel="Txt Output.top = Safe Area.top + 40"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bLt-iI-jgc" secondAttribute="bottom" constant="40" id="AyC-ra-O83"/>
+                            <constraint firstItem="mP6-uz-Ccv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CKx-XG-EOF"/>
+                            <constraint firstItem="bLt-iI-jgc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IKG-LV-Oxk"/>
+                            <constraint firstItem="bLt-iI-jgc" firstAttribute="top" secondItem="mP6-uz-Ccv" secondAttribute="bottom" constant="20" id="XBE-6E-Kf3"/>
+                            <constraint firstItem="mP6-uz-Ccv" firstAttribute="top" secondItem="4VP-zh-j0s" secondAttribute="bottom" constant="20" id="dJ2-Bx-ZXs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4VP-zh-j0s" secondAttribute="trailing" constant="40" id="ktF-eX-ktO"/>
+                            <constraint firstItem="4VP-zh-j0s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="tZP-ui-fgX"/>
                         </constraints>
                         <variation key="heightClass=compact-widthClass=compact">
                             <color key="backgroundColor" systemColor="systemYellowColor"/>
@@ -59,7 +68,7 @@
                             <color key="backgroundColor" systemColor="systemTealColor"/>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
-                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                            <color key="backgroundColor" red="0.87058823529411766" green="0.31813386564526636" blue="0.31014566877646649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <color key="backgroundColor" systemColor="systemPurpleColor"/>
@@ -67,6 +76,7 @@
                     </view>
                     <connections>
                         <outlet property="btnGenerate" destination="bLt-iI-jgc" id="a5w-EI-don"/>
+                        <outlet property="imgTornado" destination="mP6-uz-Ccv" id="GWo-u2-nf1"/>
                         <outlet property="txtOutput" destination="4VP-zh-j0s" id="IuK-6H-1Q5"/>
                         <outlet property="view" destination="4VP-zh-j0s" id="ZzD-PV-en9"/>
                     </connections>
@@ -77,14 +87,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="tornado" catalog="system" width="118" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
